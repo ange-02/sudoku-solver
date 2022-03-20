@@ -88,7 +88,6 @@ def backTrack(sudoku, possibilities):
 	if not find_empty_spots(sudoku):
 		sudokuBoard = np.copy(sudoku)
 		return True
-	#if len(possibilities[2]) > 1: print(possibilities)
 	x, y = possibilities[0], possibilities[1]
 	for guesses in possibilities[2]:
 		sudoku[y][x] = guesses
